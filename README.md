@@ -130,4 +130,4 @@ MIT
 
 ---
 
-**Última atualização**: 8 de dezembro de 2025
+**Última atualização**: 10 de dezembro de 2025
