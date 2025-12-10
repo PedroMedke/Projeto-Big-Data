@@ -2,7 +2,7 @@
 
 ## Problema Abordado
 
-Este projeto busca construir um pipeline de dados robusto para **análise de [ESCOLHA SEU DOMÍNIO]**. 
+Solução completa de pipeline de dados com coleta, processamento, armazenamento e visualização de insights.
 
 ### Contexto
 - Desafio: Necessidade de coletar, processar e analisar dados em volume para gerar insights acionáveis

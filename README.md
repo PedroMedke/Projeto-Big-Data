@@ -28,51 +28,40 @@ Pedro Kommers Medke               - 6324623
 └── tests/             # Testes unitários
 ```
 
-## 🚀 Quick Start
-
 ### Pré-requisitos
 - Python 3.9+
 - Docker & Docker Compose
 - Git
 
-### Instalação e Execução
+## ------------------- Inicio Rapido -------------------------------------
 
-1. **Clone o repositório:**
-```bash
-git clone https://github.com/PedroMedke/Projeto-Big-Data.git
-cd Projeto-Big-Data
-```
-
-2. **Configure o ambiente:**
-```bash
+Pré-requisitos
+Python 3.9+
+Docker & Docker Compose
+Git
+Instalação e Execução
+Clone o repositório:
+git clone <seu-repo>
+cd projeto-bigdata
+Configure o ambiente:
 python -m venv venv
 venv\Scripts\activate  # Windows
 source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
-```
-
-3. **Configure as variáveis de ambiente:**
-```bash
+Configure as variáveis de ambiente:
 copy .env.example .env
 # Edite .env com suas configurações
-```
-
-4. **Inicie a infraestrutura com Docker:**
-```bash
+Inicie a infraestrutura com Docker:
 docker-compose -f infrastructure/docker-compose.yml up -d
-```
-
-5. **Execute o pipeline:**
-```bash
+Execute o pipeline:
 python src/ingestao/main.py
 python src/processamento/main.py
-```
+Acesse os dashboards:
+Metabase: http://localhost:3000
+API: http://localhost:5000
 
-6. **Acesse os dashboards:**
-- Metabase: http://localhost:3000
-- API: http://localhost:5000
 
-## 📚 Documentação
+##  Documentação
 
 Consulte a pasta `docs/` para:
 - `01_visao_geral.md` - Problema, objetivos e escopo
@@ -81,9 +70,7 @@ Consulte a pasta `docs/` para:
 - `04_dados.md` - Origem, formato e dicionário
 - `05_decisoes_tecnicas.md` - Trade-offs e alternativas
 
-## 📊 Pipeline de Dados
-
-```
+##  Pipeline de Dados
 [Origem] → [Ingestão] → [Validação] → [Processamento] 
     ↓          ↓             ↓              ↓
   Dados      Raw         Bronze          Silver
@@ -91,9 +78,9 @@ Consulte a pasta `docs/` para:
                                          [Gold]
                                            ↓
                                     [Dashboards/API]
-```
 
-## 🛠️ Ferramentas Principais
+
+##  Ferramentas Principais
 
 - **Coleta**: Python requests + Airflow (batch)
 - **Processamento**: Apache Spark (PySpark)
@@ -102,27 +89,19 @@ Consulte a pasta `docs/` para:
 - **Visualização**: Metabase
 - **Infraestrutura**: Docker Compose
 
-## ⚙️ Configuração de Dependências
+##  Configuração de Dependências
 
 Veja `docs/06_dependencias.md` para versões completas.
 
-## 🧪 Testes
+##  Testes
 
 ```bash
 pytest tests/ -v
 pytest tests/ --cov=src  # Com cobertura
 ```
 
-## 📝 Logs e Monitoramento
+##  Logs e Monitoramento
 
 Logs estão em `logs/` com rotação automática.
 
-## ⚠️ Limitações e Pontos de Falha
 
-Veja `docs/07_limitacoes.md` para análise detalhada.
-
-## 📄 Licença
-
-MIT
-
----
