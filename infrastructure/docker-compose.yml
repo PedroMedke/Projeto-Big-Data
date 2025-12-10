@@ -180,6 +180,25 @@ services:
                airflow users create --username admin --password admin --firstname Admin --lastname Admin --role Admin --email admin@example.com || true &&
                airflow webserver"
 
+  # Tester - run project tests in isolated container (Java + Python)
+  tester:
+    image: python:3.12-slim-bullseye
+    container_name: bigdata-tester
+    working_dir: /workspace
+    volumes:
+      - ../:/workspace
+    # No external dependencies required for the tester (runs Spark in local mode)
+    networks:
+      - bigdata-network
+    command: >
+      bash -lc "apt-get update && apt-get install -y --no-install-recommends python3 python3-pip build-essential curl ca-certificates && \
+      export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64; export PATH=\"$JAVA_HOME/bin:$PATH\"; java -XshowSettings:properties -version || true && \
+      python3 -m pip install --upgrade pip setuptools wheel && \
+      python3 -m pip install -r /workspace/requirements_light.txt && \
+      python3 -m pip install pyspark pytest && \
+      cd /workspace && python3 -m pytest tests/ -v --tb=short"
+    restart: 'no'
+
 volumes:
   minio_data:
     driver: local

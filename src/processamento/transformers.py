@@ -107,7 +107,7 @@ class SparkTransformer:
             elif agg_func == 'max':
                 agg_expressions[col_name] = spark_max(col_name).alias(f"{col_name}_max")
         
-        df_agg = df.groupBy(*group_by).agg(agg_expressions)
+        df_agg = df.groupBy(*group_by).agg(*agg_expressions.values())
         logger.info(f"Aggregated by {group_by}")
         
         return df_agg
