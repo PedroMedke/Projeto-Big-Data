@@ -2,6 +2,13 @@
 
 Solução completa de pipeline de dados com coleta, processamento, armazenamento e visualização de insights.
 
+## Integrantes 
+
+Olavo Guilherme dos Santos Tomaz  - 1624543
+Vinícius Caires De Souza          - 6324613
+Luis Gustavo silveira pinto       - 6324670
+Pedro Kommers Medke               - 6324623
+
 ## 📋 Estrutura do Projeto
 
 ```
