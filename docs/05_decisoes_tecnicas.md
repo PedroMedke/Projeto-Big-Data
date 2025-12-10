@@ -411,5 +411,4 @@ Rollback automático se qualidade < 95%
 
 **Documento de Referência**
 - Versão: 1.0
-- Última atualização: 8 de dezembro de 2025
-- Responsável: Arquiteto de Soluções
+

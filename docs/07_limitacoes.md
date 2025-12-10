@@ -452,5 +452,4 @@ if __name__ == '__main__':
 
 **Documento de Referência**
 - Versão: 1.0
-- Última atualização: 8 de dezembro de 2025
-- Responsável: SRE/DevOps
+

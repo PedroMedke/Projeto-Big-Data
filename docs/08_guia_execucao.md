@@ -16,7 +16,7 @@ git --version            # (opcional)
 
 ### 1.1 Clone ou acesse a pasta do projeto
 ```bash
-cd "c:\Users\pmedk\Documents\faculdade\4° semestre\Big Data\Projeto"
+git clone https://github.com/PedroMedke/Projeto-Big-Data.git
 ```
 
 ### 1.2 Copiar arquivo de configuração
@@ -304,5 +304,4 @@ Se containers estão lentos:
 
 **Documento de Referência**
 - Versão: 1.0
-- Última atualização: 8 de dezembro de 2025
-- Tempo de setup: ~40 min
+

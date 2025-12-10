@@ -66,5 +66,3 @@ Este projeto busca construir um pipeline de dados robusto para **análise de [ES
 
 **Documento de Referência**
 - Versão: 1.0
-- Última atualização: 8 de dezembro de 2025
-- Responsável: Equipe de Dados

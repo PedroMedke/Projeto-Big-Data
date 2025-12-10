@@ -264,5 +264,3 @@ pip list | grep -E "airflow|spark|flask"
 
 **Documento de Referência**
 - Versão: 1.0
-- Última atualização: 8 de dezembro de 2025
-- Responsável: Engenheiro DevOps

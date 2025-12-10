@@ -134,12 +134,11 @@ Este arquivo índice lista todos os documentos e referencia-cruzada as seções 
 
 ## 9️⃣ **09_trabalho_individual.md** - Responsabilidades
 - [x] Estrutura da avaliação
-- [x] 5 Perfis com responsabilidades:
-  - Membro A: Arquiteto
+- [x] 4 Perfis com responsabilidades:
+  - Membro A: Arquiteto/DevOps
   - Membro B: Ingestão
   - Membro C: Processamento
   - Membro D: API/Analytics
-  - Membro E: DevOps
 - [x] Matriz RACI
 - [x] Critérios de avaliação
 - [x] Questões técnicas por perfil

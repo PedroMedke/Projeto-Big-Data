@@ -39,8 +39,8 @@ Pedro Kommers Medke               - 6324623
 
 1. **Clone o repositório:**
 ```bash
-git clone <seu-repo>
-cd projeto-bigdata
+git clone https://github.com/PedroMedke/Projeto-Big-Data.git
+cd Projeto-Big-Data
 ```
 
 2. **Configure o ambiente:**
@@ -80,16 +80,6 @@ Consulte a pasta `docs/` para:
 - `03_tecnologias.md` - Stack tecnológico
 - `04_dados.md` - Origem, formato e dicionário
 - `05_decisoes_tecnicas.md` - Trade-offs e alternativas
-
-## 👥 Responsabilidades
-
-| Integrante | Responsabilidade |
-|-----------|-----------------|
-| [Nome] | Ingestão e coleta de dados |
-| [Nome] | Processamento e transformação |
-| [Nome] | Armazenamento e qualidade |
-| [Nome] | API e visualizações |
-| [Nome] | Infraestrutura e DevOps |
 
 ## 📊 Pipeline de Dados
 
@@ -136,5 +126,3 @@ Veja `docs/07_limitacoes.md` para análise detalhada.
 MIT
 
 ---
-
-**Última atualização**: 10 de dezembro de 2025
